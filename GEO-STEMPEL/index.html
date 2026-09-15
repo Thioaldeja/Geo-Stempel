@@ -1,0 +1,3125 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Geo Stempel | Stempel, Laser Akrilik & Plakat Custom</title>
+
+    <meta name="description" content="Geo Stempel - Distributor gagang stempel, jasa laser akrilik, plakat custom dan berbagai kebutuhan custom." />
+
+    <style>
+      /* =========================================================
+           RESET
+        ========================================================= */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f7faff;
+        color: #17324d;
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      button,
+      input,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      :root {
+        --blue: #0b4f91;
+        --dark-blue: #073765;
+        --light-blue: #eaf4ff;
+        --gold: #d39a2f;
+        --green: #25d366;
+        --white: #ffffff;
+        --text: #17324d;
+        --muted: #66788a;
+        --border: #dce7f1;
+        --danger: #d93025;
+        --shadow: 0 12px 35px rgba(7, 55, 101, 0.1);
+        --radius: 18px;
+      }
+
+      .container {
+        width: min(1160px, calc(100% - 32px));
+        margin: auto;
+      }
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 38px;
+      }
+
+      .section-title span {
+        display: inline-block;
+        color: var(--blue);
+        font-size: 13px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-bottom: 7px;
+      }
+
+      .section-title h2 {
+        color: var(--dark-blue);
+        font-size: clamp(27px, 4vw, 38px);
+        line-height: 1.2;
+        margin-bottom: 10px;
+      }
+
+      .section-title p {
+        max-width: 650px;
+        margin: auto;
+        color: var(--muted);
+      }
+
+      /* =========================================================
+           HEADER
+        ========================================================= */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .navbar {
+        min-height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        min-width: 0;
+      }
+
+      .logo img {
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+
+      .logo-text strong {
+        display: block;
+        color: var(--dark-blue);
+        font-size: 18px;
+      }
+
+      .logo-text small {
+        color: var(--muted);
+        font-size: 11px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+      }
+
+      .nav-links a {
+        font-size: 14px;
+        font-weight: 700;
+        color: #31506a;
+        transition: 0.2s;
+      }
+
+      .nav-links a:hover {
+        color: var(--blue);
+      }
+
+      .cart-button {
+        position: relative;
+        border: 0;
+        background: var(--blue);
+        color: white;
+        width: 43px;
+        height: 43px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+      }
+
+      .cart-count {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        min-width: 20px;
+        height: 20px;
+        padding: 0 5px;
+        border-radius: 20px;
+        background: var(--gold);
+        color: white;
+        font-size: 11px;
+        font-weight: bold;
+        display: grid;
+        place-items: center;
+      }
+
+      /* =========================================================
+           HERO
+        ========================================================= */
+      .hero {
+        background: radial-gradient(circle at 85% 15%, rgba(211, 154, 47, 0.25), transparent 25%), linear-gradient(135deg, #073765, #0b4f91);
+        color: white;
+        overflow: hidden;
+      }
+
+      .hero-inner {
+        min-height: 570px;
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: center;
+        gap: 55px;
+        padding: 70px 0;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        padding: 7px 13px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.08);
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 18px;
+      }
+
+      .hero h1 {
+        font-size: clamp(36px, 5vw, 61px);
+        line-height: 1.08;
+        margin-bottom: 20px;
+      }
+
+      .hero h1 span {
+        color: #ffd66d;
+      }
+
+      .hero p {
+        max-width: 620px;
+        color: rgba(255, 255, 255, 0.84);
+        font-size: 16px;
+        margin-bottom: 28px;
+      }
+
+      .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .btn {
+        border: 0;
+        border-radius: 12px;
+        padding: 12px 18px;
+        font-weight: 800;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        transition: 0.2s;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-gold {
+        background: var(--gold);
+        color: white;
+      }
+
+      .btn-white {
+        background: white;
+        color: var(--dark-blue);
+      }
+
+      .btn-blue {
+        background: var(--blue);
+        color: white;
+      }
+
+      .btn-green {
+        background: var(--green);
+        color: white;
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--blue);
+        border: 1px solid var(--blue);
+      }
+
+      .hero-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.17);
+        padding: 26px;
+        border-radius: 24px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+      }
+
+      .hero-card img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        background: rgba(255, 255, 255, 0.96);
+        border-radius: 17px;
+        padding: 20px;
+      }
+
+      .hero-card-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .hero-stat {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 12px;
+        text-align: center;
+      }
+
+      .hero-stat strong {
+        display: block;
+        font-size: 19px;
+      }
+
+      .hero-stat small {
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      /* =========================================================
+           SERVICES
+        ========================================================= */
+      .services {
+        background: white;
+      }
+
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .service-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 22px;
+        box-shadow: var(--shadow);
+        transition: 0.25s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-4px);
+      }
+
+      .service-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 13px;
+        background: var(--light-blue);
+        display: grid;
+        place-items: center;
+        font-size: 23px;
+        margin-bottom: 15px;
+      }
+
+      .service-card h3 {
+        color: var(--dark-blue);
+        font-size: 18px;
+        margin-bottom: 7px;
+      }
+
+      .service-card p {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      /* =========================================================
+           SHOP
+        ========================================================= */
+      .shop {
+        background: #f7faff;
+      }
+
+      .shop-tools {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+      }
+
+      .search-box {
+        flex: 1;
+        min-width: 230px;
+        position: relative;
+      }
+
+      .search-box input {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 12px 15px;
+        outline: none;
+        background: white;
+      }
+
+      .search-box input:focus {
+        border-color: var(--blue);
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 7px;
+        flex-wrap: wrap;
+      }
+
+      .filter-btn {
+        border: 1px solid var(--border);
+        background: white;
+        color: #4d6478;
+        border-radius: 10px;
+        padding: 9px 13px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .filter-btn.active,
+      .filter-btn:hover {
+        background: var(--blue);
+        color: white;
+        border-color: var(--blue);
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 17px;
+      }
+
+      .product-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 7px 22px rgba(7, 55, 101, 0.06);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .product-image {
+        position: relative;
+        background: #f4f8fc;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+      }
+
+      .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 12px;
+        transition: 0.3s;
+      }
+
+      .product-card:hover .product-image img {
+        transform: scale(1.04);
+      }
+
+      .product-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: var(--gold);
+        color: white;
+        padding: 4px 8px;
+        border-radius: 7px;
+        font-size: 10px;
+        font-weight: 800;
+      }
+
+      .product-body {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .product-category {
+        color: var(--blue);
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-bottom: 4px;
+      }
+
+      .product-body h3 {
+        color: var(--dark-blue);
+        font-size: 15px;
+        line-height: 1.35;
+        margin-bottom: 8px;
+      }
+
+      .product-price {
+        font-size: 17px;
+        font-weight: 900;
+        color: var(--blue);
+        margin-top: auto;
+        margin-bottom: 11px;
+      }
+
+      .custom-price {
+        font-size: 13px;
+      }
+
+      .product-actions {
+        display: flex;
+        gap: 7px;
+      }
+
+      .product-actions .btn {
+        flex: 1;
+        padding: 9px 8px;
+        font-size: 11px;
+      }
+
+      /* =========================================================
+           PORTFOLIO
+        ========================================================= */
+      .portfolio {
+        background: white;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
+
+      .gallery-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        background: #eef4f8;
+        aspect-ratio: 1 / 1;
+        cursor: zoom-in;
+        border: 1px solid var(--border);
+      }
+
+      .gallery-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s;
+      }
+
+      .gallery-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .gallery-overlay {
+        position: absolute;
+        inset: auto 0 0;
+        padding: 25px 12px 12px;
+        color: white;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      /* =========================================================
+           ABOUT
+        ========================================================= */
+      .about {
+        background: #f7faff;
+      }
+
+      .about-card {
+        max-width: 940px;
+        margin: auto;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 22px;
+        box-shadow: var(--shadow);
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 25px;
+        align-items: center;
+      }
+
+      .about-logo-box {
+        width: 150px;
+        height: 150px;
+        border-radius: 18px;
+        background: #f5f9fd;
+        border: 1px solid var(--border);
+        display: grid;
+        place-items: center;
+        padding: 18px;
+      }
+
+      .about-logo-box img {
+        width: 110px;
+        height: 110px;
+        object-fit: contain;
+      }
+
+      .about-content h3 {
+        color: var(--dark-blue);
+        font-size: 25px;
+        margin-bottom: 8px;
+      }
+
+      .about-content p {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+
+      .about-points {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+      }
+
+      .about-point {
+        background: var(--light-blue);
+        color: var(--blue);
+        padding: 6px 9px;
+        border-radius: 8px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+
+      /* =========================================================
+           WHY US
+        ========================================================= */
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
+
+      .why-card {
+        border: 1px solid var(--border);
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .why-card .icon {
+        font-size: 27px;
+        margin-bottom: 8px;
+      }
+
+      .why-card h3 {
+        font-size: 15px;
+        color: var(--dark-blue);
+        margin-bottom: 5px;
+      }
+
+      .why-card p {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      /* =========================================================
+           CONTACT
+        ========================================================= */
+      .contact {
+        background: var(--dark-blue);
+        color: white;
+      }
+
+      .contact .section-title h2,
+      .contact .section-title p {
+        color: white;
+      }
+
+      .contact .section-title span {
+        color: #ffd66d;
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .contact-card {
+        background: white;
+        color: var(--text);
+        border-radius: 18px;
+        padding: 22px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 13px;
+        padding: 13px 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .contact-item:last-child {
+        border-bottom: 0;
+      }
+
+      .contact-icon {
+        width: 39px;
+        height: 39px;
+        min-width: 39px;
+        background: var(--light-blue);
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        font-size: 17px;
+      }
+
+      .contact-item strong {
+        display: block;
+        font-size: 13px;
+        color: var(--dark-blue);
+      }
+
+      .contact-item span {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .bca-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .bca-logo {
+        width: 55px;
+        height: 32px;
+        border-radius: 6px;
+        background: #005baa;
+        color: white;
+        display: grid;
+        place-items: center;
+        font-weight: 900;
+        font-size: 16px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .bca-logo::after {
+        content: "";
+        position: absolute;
+        width: 22px;
+        height: 5px;
+        background: #ed1c24;
+        transform: rotate(-25deg);
+        top: 5px;
+        right: -3px;
+      }
+
+      .wa-logo {
+        width: 24px;
+        height: 24px;
+      }
+
+      .map-wrapper {
+        overflow: hidden;
+        border-radius: 15px;
+        min-height: 100%;
+      }
+
+      .map-wrapper iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 390px;
+        border: 0;
+      }
+
+      /* =========================================================
+           FOOTER
+        ========================================================= */
+      footer {
+        background: #052a4d;
+        color: rgba(255, 255, 255, 0.75);
+        padding: 35px 0 22px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 25px;
+      }
+
+      .footer-logo {
+        width: 120px;
+        margin-bottom: 12px;
+        background: white;
+        padding: 8px;
+        border-radius: 10px;
+      }
+
+      footer h3 {
+        color: white;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      footer p,
+      footer a {
+        font-size: 12px;
+      }
+
+      footer a {
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      footer a:hover {
+        color: white;
+      }
+
+      .copyright {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 18px;
+        text-align: center;
+        font-size: 11px;
+      }
+
+      /* =========================================================
+           CART SIDEBAR
+        ========================================================= */
+      .cart-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 2000;
+        display: none;
+      }
+
+      .cart-overlay.show {
+        display: block;
+      }
+
+      .cart-sidebar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: min(430px, 100%);
+        background: white;
+        display: flex;
+        flex-direction: column;
+        animation: slideIn 0.25s ease;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(100%);
+        }
+
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      .cart-header {
+        padding: 18px;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .cart-header h2 {
+        color: var(--dark-blue);
+        font-size: 20px;
+      }
+
+      .close-btn {
+        width: 36px;
+        height: 36px;
+        border: 0;
+        border-radius: 9px;
+        background: #f0f4f8;
+        font-size: 19px;
+      }
+
+      .cart-items {
+        flex: 1;
+        overflow-y: auto;
+        padding: 15px;
+      }
+
+      .empty-cart {
+        text-align: center;
+        padding: 55px 20px;
+        color: var(--muted);
+      }
+
+      .cart-item {
+        border: 1px solid var(--border);
+        border-radius: 13px;
+        padding: 11px;
+        margin-bottom: 10px;
+      }
+
+      .cart-item-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .cart-item h4 {
+        font-size: 13px;
+        color: var(--dark-blue);
+      }
+
+      .cart-item-price {
+        color: var(--blue);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .cart-item-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 9px;
+      }
+
+      .qty-controls {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .qty-controls button {
+        border: 1px solid var(--border);
+        background: #f7faff;
+        width: 28px;
+        height: 28px;
+        border-radius: 7px;
+      }
+
+      .remove-item {
+        border: 0;
+        background: none;
+        color: var(--danger);
+        font-size: 11px;
+      }
+
+      .cart-note {
+        margin-top: 10px;
+      }
+
+      .cart-note label {
+        display: block;
+        color: var(--muted);
+        font-size: 10px;
+        margin-bottom: 4px;
+      }
+
+      .cart-note textarea {
+        width: 100%;
+        resize: vertical;
+        min-height: 55px;
+        padding: 8px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        font-size: 11px;
+        outline: none;
+      }
+
+      .file-upload {
+        margin-top: 9px;
+      }
+
+      .file-upload label {
+        display: block;
+        font-size: 10px;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+
+      .file-upload input {
+        width: 100%;
+        font-size: 10px;
+      }
+
+      .cart-footer {
+        border-top: 1px solid var(--border);
+        padding: 16px;
+        background: white;
+      }
+
+      .cart-total {
+        display: flex;
+        justify-content: space-between;
+        color: var(--dark-blue);
+        font-size: 17px;
+        font-weight: 900;
+        margin-bottom: 12px;
+      }
+
+      .cart-footer .btn {
+        width: 100%;
+        margin-bottom: 7px;
+      }
+
+      .secure-note {
+        text-align: center;
+        font-size: 9px;
+        color: var(--muted);
+      }
+
+      /* =========================================================
+           PAYMENT MODAL
+        ========================================================= */
+      .modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.58);
+        z-index: 3000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+      }
+
+      .modal.show {
+        display: flex;
+      }
+
+      .modal-box {
+        width: min(540px, 100%);
+        max-height: 92vh;
+        overflow-y: auto;
+        background: white;
+        border-radius: 20px;
+        padding: 22px;
+        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 17px;
+      }
+
+      .modal-header h2 {
+        color: var(--dark-blue);
+        font-size: 21px;
+      }
+
+      .payment-bank {
+        background: #f5f9fd;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+
+      .payment-bank-top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+
+      .account-number {
+        font-size: 22px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        color: var(--dark-blue);
+      }
+
+      .account-name {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .copy-btn {
+        margin-left: auto;
+        border: 1px solid var(--border);
+        background: white;
+        border-radius: 8px;
+        padding: 7px 9px;
+        font-size: 10px;
+        font-weight: 700;
+      }
+
+      .form-group {
+        margin-bottom: 12px;
+      }
+
+      .form-group label {
+        display: block;
+        color: var(--dark-blue);
+        font-size: 11px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 9px;
+        padding: 10px;
+        outline: none;
+        font-size: 12px;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        border-color: var(--blue);
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .payment-warning {
+        background: #fff8e8;
+        border: 1px solid #f2d690;
+        color: #765400;
+        border-radius: 11px;
+        padding: 11px;
+        font-size: 11px;
+        margin-bottom: 12px;
+      }
+
+      .checkbox-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        background: #f5f9fd;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 12px;
+      }
+
+      .checkbox-row input {
+        margin-top: 3px;
+      }
+
+      .checkbox-row label {
+        font-size: 10px;
+        color: #526779;
+      }
+
+      /* =========================================================
+           GALLERY ZOOM MODAL
+        ========================================================= */
+      .image-viewer {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.94);
+        z-index: 5000;
+        display: none;
+        flex-direction: column;
+      }
+
+      .image-viewer.show {
+        display: flex;
+      }
+
+      .viewer-toolbar {
+        min-height: 60px;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        color: white;
+      }
+
+      .viewer-tools {
+        display: flex;
+        gap: 7px;
+      }
+
+      .viewer-tools button,
+      .viewer-close {
+        border: 0;
+        width: 38px;
+        height: 38px;
+        border-radius: 9px;
+        background: rgba(255, 255, 255, 0.13);
+        color: white;
+        font-size: 17px;
+      }
+
+      .viewer-stage {
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        touch-action: none;
+      }
+
+      .viewer-stage img {
+        max-width: 90%;
+        max-height: 82%;
+        object-fit: contain;
+        user-select: none;
+        cursor: grab;
+        transform-origin: center center;
+        transition: transform 0.15s ease;
+      }
+
+      .viewer-help {
+        color: rgba(255, 255, 255, 0.65);
+        text-align: center;
+        font-size: 10px;
+        padding: 9px;
+      }
+
+      /* =========================================================
+           TOAST
+        ========================================================= */
+      .toast {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 100px);
+        background: #17324d;
+        color: white;
+        padding: 11px 16px;
+        border-radius: 10px;
+        font-size: 12px;
+        z-index: 7000;
+        opacity: 0;
+        transition: 0.3s;
+        pointer-events: none;
+      }
+
+      .toast.show {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+
+      /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+      @media (max-width: 1000px) {
+        .nav-links {
+          gap: 12px;
+        }
+
+        .hero-inner {
+          grid-template-columns: 1fr;
+          padding: 55px 0;
+        }
+
+        .hero-content {
+          text-align: center;
+        }
+
+        .hero-content p {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .hero-buttons {
+          justify-content: center;
+        }
+
+        .hero-card {
+          max-width: 520px;
+          width: 100%;
+          margin: auto;
+        }
+
+        .product-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .why-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 800px) {
+        .section {
+          padding: 55px 0;
+        }
+
+        .navbar {
+          min-height: 67px;
+        }
+
+        .logo img {
+          width: 48px;
+          height: 48px;
+        }
+
+        .logo-text small {
+          display: none;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .service-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .product-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .about-card {
+          grid-template-columns: 1fr;
+          text-align: center;
+          justify-items: center;
+          gap: 15px;
+        }
+
+        .about-logo-box {
+          width: 115px;
+          height: 115px;
+          padding: 12px;
+        }
+
+        .about-logo-box img {
+          width: 90px;
+          height: 90px;
+        }
+
+        .about-points {
+          justify-content: center;
+        }
+
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .container {
+          width: min(100% - 22px, 1160px);
+        }
+
+        .hero-inner {
+          min-height: auto;
+        }
+
+        .hero h1 {
+          font-size: 37px;
+        }
+
+        .hero-card img {
+          height: 230px;
+        }
+
+        .hero-card-info {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .product-grid {
+          gap: 10px;
+        }
+
+        .product-body {
+          padding: 11px;
+        }
+
+        .product-body h3 {
+          font-size: 13px;
+        }
+
+        .product-price {
+          font-size: 15px;
+        }
+
+        .product-actions {
+          flex-direction: column;
+        }
+
+        .gallery-grid {
+          gap: 9px;
+        }
+
+        .why-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+
+        .modal-box {
+          padding: 16px;
+        }
+
+        .account-number {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =========================================================
+     HEADER
+========================================================= -->
+    <header>
+      <div class="container navbar">
+        <a href="#home" class="logo">
+          <img src="1.jpg" alt="Logo Geo Stempel" />
+
+          <div class="logo-text">
+            <strong>Geo Stempel</strong>
+            <small>Stempel • Akrilik • Plakat Custom</small>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#services">Layanan</a>
+          <a href="#shop">Produk</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">Tentang</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+
+        <button class="cart-button" onclick="openCart()" aria-label="Keranjang">
+          🛒
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     HERO
+========================================================= -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">✦ Solusi Custom & Percetakan</div>
+
+          <h1>
+            Buat Kebutuhanmu
+            <span>Lebih Berkesan.</span>
+          </h1>
+
+          <p>Geo Stempel menyediakan berbagai kebutuhan stempel, laser akrilik, plakat, piala, huruf timbul dan berbagai produk custom lainnya.</p>
+
+          <div class="hero-buttons">
+            <a href="#shop" class="btn btn-gold"> 🛍 Lihat Produk </a>
+
+            <a href="https://wa.me/6281318988857" target="_blank" class="btn btn-white"> 💬 Konsultasi WhatsApp </a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="produk-7.jpg" alt="Produk Geo Stempel" />
+
+          <div class="hero-card-info">
+            <div class="hero-stat">
+              <strong>Custom</strong>
+              <small>Sesuai kebutuhan</small>
+            </div>
+
+            <div class="hero-stat">
+              <strong>Fast</strong>
+              <small>Respon cepat</small>
+            </div>
+
+            <div class="hero-stat">
+              <strong>Quality</strong>
+              <small>Hasil berkualitas</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SERVICES
+========================================================= -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-title">
+          <span>Layanan Kami</span>
+          <h2>Apa yang Bisa Kami Buat?</h2>
+          <p>Berbagai kebutuhan custom untuk kantor, usaha, sekolah, event maupun kebutuhan pribadi.</p>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">📝</div>
+            <h3>Stempel Custom</h3>
+            <p>Stempel flash, stempel kayu, stempel Trodat, stempel ganci dan berbagai model lainnya.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">✦</div>
+            <h3>Laser Akrilik</h3>
+            <p>Jasa cutting dan engraving akrilik untuk berbagai kebutuhan custom.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🏆</div>
+            <h3>Plakat & Piala</h3>
+            <p>Plakat, piala dan penghargaan custom untuk acara, sekolah, perusahaan dan organisasi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SHOP
+========================================================= -->
+    <section class="section shop" id="shop">
+      <div class="container">
+        <div class="section-title">
+          <span>Produk</span>
+          <h2>Pilih Produk Anda</h2>
+          <p>Pilih produk yang tersedia atau hubungi kami untuk kebutuhan custom dengan harga menyesuaikan.</p>
+        </div>
+
+        <div class="shop-tools">
+          <div class="search-box">
+            <input type="search" id="searchInput" placeholder="🔎 Cari produk..." oninput="renderProducts()" />
+          </div>
+
+          <div class="filter-buttons">
+            <button class="filter-btn active" onclick="setCategory('semua', this)">Semua</button>
+
+            <button class="filter-btn" onclick="setCategory('stempel', this)">Stempel</button>
+
+            <button class="filter-btn" onclick="setCategory('plakat', this)">Plakat</button>
+
+            <button class="filter-btn" onclick="setCategory('akrilik', this)">Akrilik</button>
+
+            <button class="filter-btn" onclick="setCategory('custom', this)">Custom</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PORTFOLIO
+========================================================= -->
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <span>Portfolio</span>
+          <h2>Hasil Pekerjaan Kami</h2>
+          <p>Klik gambar untuk melihat lebih detail. Bisa zoom menggunakan tombol, mouse wheel atau double click.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-card" onclick="openViewer('produk-9.jpg')">
+            <img src="produk-9.jpg" alt="Portfolio Geo Stempel" />
+            <div class="gallery-overlay">Lihat Detail</div>
+          </div>
+
+          <div class="gallery-card" onclick="openViewer('produk-7.jpg')">
+            <img src="produk-7.jpg" alt="Portfolio Plakat" />
+            <div class="gallery-overlay">Plakat Akrilik</div>
+          </div>
+
+          <div class="gallery-card" onclick="openViewer('produk-16.jpg')">
+            <img src="produk-16.jpg" alt="Portfolio Neon Box" />
+            <div class="gallery-overlay">Neon Box</div>
+          </div>
+
+          <div class="gallery-card" onclick="openViewer('produk-14.jpg')">
+            <img src="produk-14.jpg" alt="Portfolio Akrilik" />
+            <div class="gallery-overlay">Akrilik Custom</div>
+          </div>
+
+          <div class="gallery-card" onclick="openViewer('produk-13.jpg')">
+            <img src="produk-13.jpg" alt="Portfolio Huruf Timbul" />
+            <div class="gallery-overlay">Huruf Timbul</div>
+          </div>
+
+          <div class="gallery-card" onclick="openViewer('produk-12.jpg')">
+            <img src="produk-12.jpg" alt="Portfolio Akrilik" />
+            <div class="gallery-overlay">Custom Akrilik</div>
+          </div>
+
+          <div class="gallery-card" onclick="openViewer('produk-8.jpg')">
+            <img src="produk-8.jpg" alt="Portfolio Plakat" />
+            <div class="gallery-overlay">Plakat Premium</div>
+          </div>
+
+          <div class="gallery-card" onclick="openViewer('produk-15.jpg')">
+            <img src="produk-15.jpg" alt="Portfolio Geo Stempel" />
+            <div class="gallery-overlay">Custom</div>
+          </div>
+
+          <div class="gallery-card" onclick="openViewer('produk-17.jpg')">
+            <img src="produk-17.jpg" alt="Portfolio Geo Stempel" />
+            <div class="gallery-overlay">Custom</div>
+          </div>
+
+          <div class="gallery-card" onclick="openViewer('produk-18.jpg')">
+            <img src="produk-18.jpg" alt="Portfolio Geo Stempel" />
+            <div class="gallery-overlay">Custom</div>
+          </div>
+
+          <div class="gallery-card" onclick="openViewer('produk-19.jpg')">
+            <img src="produk-19.jpg" alt="Portfolio Geo Stempel" />
+            <div class="gallery-overlay">Custom</div>
+          </div>
+
+          <div class="gallery-card" onclick="openViewer('produk-20.jpg')">
+            <img src="produk-20.jpg" alt="Portfolio Geo Stempel" />
+            <div class="gallery-overlay">Custom</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     ABOUT
+========================================================= -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-title">
+          <span>Tentang Kami</span>
+          <h2>Geo Stempel</h2>
+        </div>
+
+        <div class="about-card">
+          <div class="about-logo-box">
+            <img src="1.jpg" alt="Logo Geo Stempel" />
+          </div>
+
+          <div class="about-content">
+            <h3>Solusi Custom untuk Berbagai Kebutuhan</h3>
+
+            <p>Geo Stempel merupakan usaha yang menyediakan kebutuhan stempel, gagang stempel, jasa laser akrilik, plakat, piala, huruf timbul dan berbagai kebutuhan custom lainnya.</p>
+
+            <p>Kami berusaha memberikan produk yang rapi, berkualitas dan sesuai kebutuhan pelanggan. Untuk produk custom, pelanggan dapat melakukan konsultasi terlebih dahulu dengan admin.</p>
+
+            <div class="about-points">
+              <span class="about-point">✓ Bisa Custom</span>
+              <span class="about-point">✓ Konsultasi</span>
+              <span class="about-point">✓ Respon Cepat</span>
+              <span class="about-point">✓ Berbagai Produk</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     WHY US
+========================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <span>Kenapa Kami?</span>
+          <h2>Kenapa Pilih Geo Stempel?</h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="icon">🎯</div>
+            <h3>Sesuai Pesanan</h3>
+            <p>Produk custom dibuat berdasarkan kebutuhan pelanggan.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="icon">💬</div>
+            <h3>Mudah Konsultasi</h3>
+            <p>Konsultasikan kebutuhan sebelum melakukan pemesanan.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="icon">✨</div>
+            <h3>Rapi & Berkualitas</h3>
+            <p>Mengutamakan hasil akhir yang rapi dan menarik.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="icon">📦</div>
+            <h3>Beragam Produk</h3>
+            <p>Stempel, akrilik, plakat dan kebutuhan custom lainnya.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CONTACT
+========================================================= -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <span>Kontak</span>
+          <h2>Hubungi Geo Stempel</h2>
+          <p>Silakan hubungi kami untuk konsultasi, pemesanan maupun kebutuhan custom.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg class="wa-logo" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#25D366" d="M16 3C8.82 3 3 8.82 3 16c0 2.29.59 4.44 1.7 6.32L3.1 29l6.85-1.55A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3z" />
+                  <path
+                    fill="#fff"
+                    d="M22.47 19.11c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.77-1.64-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.68-1.64-.93-2.25-.25-.6-.5-.52-.68-.53h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.49.71.3 1.26.48 1.69.61.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35z"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <strong>WhatsApp</strong>
+                <span>0813-1898-8857</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">🏦</div>
+
+              <div>
+                <strong>Pembayaran</strong>
+
+                <div class="bca-box">
+                  <div class="bca-logo">BCA</div>
+
+                  <span> Transfer Bank BCA </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">💳</div>
+
+              <div>
+                <strong>Nomor Rekening</strong>
+                <span>
+                  8455-1212-10
+                  <br />
+                  a.n. Nia Rediawati
+                </span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+
+              <div>
+                <strong>Lokasi</strong>
+                <span> Geo Stempel </span>
+              </div>
+            </div>
+
+            <a href="https://wa.me/6281318988857" target="_blank" class="btn btn-green" style="width: 100%; margin-top: 10px"> 💬 Chat WhatsApp </a>
+          </div>
+
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2009121405304!2d106.99562277528071!3d-6.237228461078804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d72b02dd56d%3A0x9d08eff018040fa1!2sGeo%20stempel!5e0!3m2!1sen!2sid!4v1789189306441!5m2!1sen!2sid"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <img src="1.jpg" class="footer-logo" alt="Geo Stempel" />
+
+            <p>Geo Stempel menyediakan berbagai kebutuhan stempel, laser akrilik, plakat dan produk custom.</p>
+          </div>
+
+          <div>
+            <h3>Menu</h3>
+
+            <a href="#home">Home</a>
+            <a href="#services">Layanan</a>
+            <a href="#shop">Produk</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">Tentang Kami</a>
+          </div>
+
+          <div>
+            <h3>Kontak</h3>
+
+            <a href="https://wa.me/6281318988857" target="_blank"> WhatsApp </a>
+
+            <p>BCA: 8455-1212-10</p>
+
+            <p>a.n. Nia Rediawati</p>
+          </div>
+        </div>
+
+        <div class="copyright">© 2026 Geo Stempel. All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <!-- =========================================================
+     CART SIDEBAR
+========================================================= -->
+    <div class="cart-overlay" id="cartOverlay">
+      <div class="cart-sidebar">
+        <div class="cart-header">
+          <h2>🛒 Keranjang</h2>
+
+          <button class="close-btn" onclick="closeCart()">×</button>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total</span>
+
+            <span id="cartTotal"> Rp0 </span>
+          </div>
+
+          <button class="btn btn-blue" onclick="openPaymentModal()">💳 Lanjut ke Pembayaran</button>
+
+          <button class="btn btn-outline" onclick="clearCart()">Kosongkan Keranjang</button>
+
+          <div class="secure-note">Pesanan belum dianggap lunas sebelum pembayaran diverifikasi oleh admin.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+     PAYMENT MODAL
+========================================================= -->
+    <div class="modal" id="paymentModal">
+      <div class="modal-box">
+        <div class="modal-header">
+          <h2>Konfirmasi Pembayaran</h2>
+
+          <button class="close-btn" onclick="closePaymentModal()">×</button>
+        </div>
+
+        <div class="payment-bank">
+          <div class="payment-bank-top">
+            <div class="bca-logo">BCA</div>
+
+            <div>
+              <div style="font-size: 11px; color: #66788a">Transfer Bank BCA</div>
+
+              <div class="account-number">8455-1212-10</div>
+
+              <div class="account-name">a.n. Nia Rediawati</div>
+            </div>
+
+            <button class="copy-btn" onclick="copyBCA()">Salin</button>
+          </div>
+
+          <div style="font-size: 11px; color: #66788a">
+            Total pesanan:
+            <strong id="paymentTotal"> Rp0 </strong>
+          </div>
+        </div>
+
+        <div class="payment-warning">
+          ⚠️ <strong>Penting:</strong>
+          Tombol konfirmasi ini bukan bukti bahwa pembayaran sudah diterima. Pesanan hanya akan diproses setelah admin mengecek mutasi rekening BCA.
+        </div>
+
+        <div class="form-group">
+          <label> Nama Pemesan * </label>
+
+          <input type="text" id="customerName" placeholder="Nama lengkap" />
+        </div>
+
+        <div class="form-group">
+          <label> Nomor WhatsApp * </label>
+
+          <input type="tel" id="customerPhone" placeholder="Contoh: 08123456789" />
+        </div>
+
+        <div class="form-group">
+          <label> Nominal yang Ditransfer * </label>
+
+          <input type="number" id="transferAmount" placeholder="Masukkan nominal transfer" />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label> Tanggal Transfer * </label>
+
+            <input type="date" id="transferDate" />
+          </div>
+
+          <div class="form-group">
+            <label> Jam Transfer * </label>
+
+            <input type="time" id="transferTime" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label> Catatan </label>
+
+          <textarea id="paymentNote" rows="3" placeholder="Catatan tambahan jika ada..."></textarea>
+        </div>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="paymentAgreement" onchange="updatePaymentButton()" />
+
+          <label for="paymentAgreement"> Saya memahami bahwa klik tombol ini bukan bukti pembayaran. Pesanan hanya diproses setelah admin memverifikasi mutasi rekening BCA. </label>
+        </div>
+
+        <button class="btn btn-green" id="paymentButton" disabled onclick="confirmPayment()" style="width: 100%">💬 Konfirmasi via WhatsApp</button>
+      </div>
+    </div>
+
+    <!-- =========================================================
+     IMAGE VIEWER
+========================================================= -->
+    <div class="image-viewer" id="imageViewer">
+      <div class="viewer-toolbar">
+        <div>
+          <strong>Portfolio Geo Stempel</strong>
+        </div>
+
+        <div class="viewer-tools">
+          <button onclick="zoomOut()">−</button>
+
+          <button onclick="resetZoom()">1:1</button>
+
+          <button onclick="zoomIn()">+</button>
+
+          <button class="viewer-close" onclick="closeViewer()">×</button>
+        </div>
+      </div>
+
+      <div class="viewer-stage" id="viewerStage">
+        <img id="viewerImage" src="" alt="Portfolio Geo Stempel" />
+      </div>
+
+      <div class="viewer-help">Scroll mouse untuk zoom • Double click untuk zoom • Geser gambar ketika diperbesar</div>
+    </div>
+
+    <!-- =========================================================
+     TOAST
+========================================================= -->
+    <div class="toast" id="toast"></div>
+
+    <!-- =========================================================
+     SUPABASE
+========================================================= -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+      /* =========================================================
+   KONFIGURASI
+========================================================= */
+
+      const SUPABASE_URL = "https://voiyhbornoqtqwdwdnyp.supabase.co";
+
+      const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_olLSx55xnm09IJUxvAyQ6Q_lJLBueQZ";
+
+      const SUPABASE_BUCKET = "order-files";
+
+      const WHATSAPP_NUMBER = "6281318988857";
+
+      const MAX_FILE_SIZE = 10 * 1024 * 1024;
+
+      /* =========================================================
+   SUPABASE CLIENT
+========================================================= */
+
+      let supabaseClient = null;
+
+      if (SUPABASE_PUBLISHABLE_KEY && SUPABASE_PUBLISHABLE_KEY !== "YOUR_SUPABASE_PUBLISHABLE_KEY") {
+        supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+      }
+
+      /* =========================================================
+   DATA PRODUK
+========================================================= */
+
+      const products = [
+        {
+          id: 1,
+          name: "Stempel Flash Gagang Oval",
+          category: "stempel",
+          price: 70000,
+          custom: false,
+          image: "produk-1.jpg",
+        },
+
+        {
+          id: 2,
+          name: "Stempel Flash Lingkaran",
+          category: "stempel",
+          price: 70000,
+          custom: false,
+          image: "produk-2.jpg",
+        },
+
+        {
+          id: 3,
+          name: "Stempel Flash Gagang Persegi",
+          category: "stempel",
+          price: 70000,
+          custom: false,
+          image: "produk-3.jpg",
+        },
+
+        {
+          id: 4,
+          name: "Stempel Kayu",
+          category: "stempel",
+          price: 50000,
+          custom: false,
+          image: "produk-4.jpg",
+        },
+
+        {
+          id: 5,
+          name: "Stempel Trodat",
+          category: "stempel",
+          price: 350000,
+          custom: false,
+          image: "produk-5.jpg",
+        },
+
+        {
+          id: 6,
+          name: "Stempel Ganci",
+          category: "stempel",
+          price: 70000,
+          custom: false,
+          image: "produk-6.jpg",
+        },
+
+        {
+          id: 7,
+          name: "Plakat Akrilik Custom",
+          category: "plakat",
+          price: 350000,
+          custom: false,
+          image: "produk-7.jpg",
+        },
+
+        {
+          id: 8,
+          name: "Plakat Premium",
+          category: "plakat",
+          price: 350000,
+          custom: false,
+          image: "produk-8.jpg",
+        },
+
+        {
+          id: 9,
+          name: "Piala Custom",
+          category: "piala",
+          price: 0,
+          custom: true,
+          image: "produk-10.jpg",
+        },
+
+        {
+          id: 10,
+          name: "Huruf Timbul",
+          category: "huruf timbul",
+          price: 0,
+          custom: true,
+          image: "produk-12.jpg",
+        },
+
+        {
+          id: 11,
+          name: "Neon Box Custom",
+          category: "neon box",
+          price: 0,
+          custom: true,
+          image: "produk-16.jpg",
+        },
+
+        {
+          id: 12,
+          name: "Huruf Timbul Custom",
+          category: "huruf timbul",
+          price: 0,
+          custom: true,
+          image: "produk-13.jpg",
+        },
+
+        {
+          id: 13,
+          name: "Gantungan Kunci Akrelik",
+          category: "akrilik",
+          price: 0,
+          custom: true,
+          image: "produk-22.jpg",
+        },
+
+        {
+          id: 14,
+          name: "Akrelik Custom",
+          category: "akrilik",
+          price: 0,
+          custom: true,
+          image: "produk-21.jpg",
+        },
+
+        {
+          id: 15,
+          name: "Acrylic Sign Board",
+          category: "akrilik",
+          price: 0,
+          custom: true,
+          image: "produk-23.jpg",
+        },
+
+        {
+          id: 16,
+          name: "No Rumah / No Meja Kafe Akrilik",
+          category: "akrilik",
+          price: 0,
+          custom: true,
+          image: "produk-24.jpg",
+        },
+      ];
+
+      /* =========================================================
+   STATE
+========================================================= */
+
+      let activeCategory = "semua";
+
+      let cart = JSON.parse(localStorage.getItem("geoStempelCart") || "[]");
+
+      let selectedFiles = new Map();
+
+      /* =========================================================
+   HELPER
+========================================================= */
+
+      function formatRupiah(number) {
+        return new Intl.NumberFormat("id-ID", {
+          style: "currency",
+          currency: "IDR",
+          maximumFractionDigits: 0,
+        }).format(number);
+      }
+
+      function escapeHTML(value) {
+        return String(value || "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function showToast(message) {
+        const toast = document.getElementById("toast");
+
+        toast.textContent = message;
+
+        toast.classList.add("show");
+
+        setTimeout(() => {
+          toast.classList.remove("show");
+        }, 2500);
+      }
+
+      /* =========================================================
+   CATEGORY
+========================================================= */
+
+      function setCategory(category, button) {
+        activeCategory = category;
+
+        document.querySelectorAll(".filter-btn").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        renderProducts();
+      }
+
+      /* =========================================================
+   RENDER PRODUCTS
+========================================================= */
+
+      function renderProducts() {
+        const grid = document.getElementById("productGrid");
+
+        const search = document.getElementById("searchInput").value.toLowerCase().trim();
+
+        const filtered = products.filter((product) => {
+          const matchesCategory = activeCategory === "semua" || product.category === activeCategory || (activeCategory === "custom" && product.custom);
+
+          const matchesSearch = product.name.toLowerCase().includes(search);
+
+          return matchesCategory && matchesSearch;
+        });
+
+        if (!filtered.length) {
+          grid.innerHTML = `
+            <div style="
+                grid-column:1/-1;
+                text-align:center;
+                padding:40px;
+                color:#66788a;">
+                Produk tidak ditemukan.
+            </div>
+        `;
+
+          return;
+        }
+
+        grid.innerHTML = filtered
+          .map((product) => {
+            const categoryName = product.category.charAt(0).toUpperCase() + product.category.slice(1);
+
+            const price = product.custom ? `<span class="custom-price">Harga custom</span>` : formatRupiah(product.price);
+
+            const action = product.custom
+              ? `
+                        <button
+                            class="btn btn-green"
+                            onclick="askCustom('${escapeHTML(product.name)}')">
+                            💬 Tanya
+                        </button>
+                    `
+              : `
+                        <button
+                            class="btn btn-blue"
+                            onclick="addToCart(${product.id})">
+                            + Keranjang
+                        </button>
+                    `;
+
+            return `
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        ${
+                          product.custom
+                            ? `<div class="product-badge">
+                                    CUSTOM
+                                   </div>`
+                            : ""
+                        }
+
+                        <img
+                            src="${product.image}"
+                            alt="${escapeHTML(product.name)}"
+                            loading="lazy">
+
+                    </div>
+
+
+                    <div class="product-body">
+
+                        <div class="product-category">
+                            ${categoryName}
+                        </div>
+
+                        <h3>
+                            ${escapeHTML(product.name)}
+                        </h3>
+
+                        <div class="product-price">
+                            ${price}
+                        </div>
+
+                        <div class="product-actions">
+                            ${action}
+                        </div>
+
+                    </div>
+
+                </div>
+
+            `;
+          })
+          .join("");
+      }
+
+      /* =========================================================
+   CUSTOM PRODUCT
+========================================================= */
+
+      function askCustom(productName) {
+        const message = `Halo Geo Stempel,
+
+Saya ingin menanyakan harga untuk:
+
+Produk: ${productName}
+
+Mohon informasi harga dan detailnya.
+
+Terima kasih.`;
+
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank");
+      }
+
+      /* =========================================================
+   CART
+========================================================= */
+
+      function saveCart() {
+        localStorage.setItem("geoStempelCart", JSON.stringify(cart));
+      }
+
+      function addToCart(productId) {
+        const product = products.find((p) => p.id === productId);
+
+        if (!product || product.custom) {
+          return;
+        }
+
+        const existing = cart.find((item) => item.id === productId);
+
+        if (existing) {
+          existing.qty += 1;
+        } else {
+          cart.push({
+            id: product.id,
+            qty: 1,
+            note: "",
+            fileName: "",
+          });
+        }
+
+        saveCart();
+        renderCart();
+
+        showToast(`${product.name} ditambahkan ke keranjang`);
+      }
+
+      function updateQuantity(id, change) {
+        const item = cart.find((item) => item.id === id);
+
+        if (!item) {
+          return;
+        }
+
+        item.qty += change;
+
+        if (item.qty <= 0) {
+          cart = cart.filter((item) => item.id !== id);
+
+          selectedFiles.delete(id);
+        }
+
+        saveCart();
+        renderCart();
+      }
+
+      function removeFromCart(id) {
+        cart = cart.filter((item) => item.id !== id);
+
+        selectedFiles.delete(id);
+
+        saveCart();
+        renderCart();
+      }
+
+      function clearCart() {
+        if (!cart.length) {
+          return;
+        }
+
+        if (!confirm("Yakin ingin mengosongkan keranjang?")) {
+          return;
+        }
+
+        cart = [];
+
+        selectedFiles.clear();
+
+        saveCart();
+
+        renderCart();
+      }
+
+      function calculateTotal() {
+        return cart.reduce((total, item) => {
+          const product = products.find((p) => p.id === item.id);
+
+          return total + (product ? product.price * item.qty : 0);
+        }, 0);
+      }
+
+      /* =========================================================
+   CART NOTE
+========================================================= */
+
+      function updateNote(id, value) {
+        const item = cart.find((item) => item.id === id);
+
+        if (!item) {
+          return;
+        }
+
+        item.note = value;
+
+        saveCart();
+      }
+
+      /* =========================================================
+   FILE UPLOAD SELECTION
+========================================================= */
+
+      function handleFileChange(id, input) {
+        const file = input.files[0];
+
+        if (!file) {
+          return;
+        }
+
+        if (file.size > MAX_FILE_SIZE) {
+          alert("Ukuran file terlalu besar. Maksimal 10 MB.");
+
+          input.value = "";
+
+          return;
+        }
+
+        selectedFiles.set(id, file);
+
+        const item = cart.find((item) => item.id === id);
+
+        if (item) {
+          item.fileName = file.name;
+
+          saveCart();
+        }
+
+        showToast(`File "${file.name}" dipilih`);
+      }
+
+      /* =========================================================
+   RENDER CART
+========================================================= */
+
+      function renderCart() {
+        const container = document.getElementById("cartItems");
+
+        const countElement = document.getElementById("cartCount");
+
+        const totalElement = document.getElementById("cartTotal");
+
+        const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+
+        countElement.textContent = totalQty;
+
+        totalElement.textContent = formatRupiah(calculateTotal());
+
+        if (!cart.length) {
+          container.innerHTML = `
+            <div class="empty-cart">
+                <div style="font-size:40px;margin-bottom:10px;">
+                    🛒
+                </div>
+
+                <strong>Keranjang masih kosong</strong>
+
+                <p style="margin-top:5px;">
+                    Silakan pilih produk terlebih dahulu.
+                </p>
+            </div>
+        `;
+
+          return;
+        }
+
+        container.innerHTML = cart
+          .map((item) => {
+            const product = products.find((p) => p.id === item.id);
+
+            if (!product) {
+              return "";
+            }
+
+            let noteLabel = "📝 Ukuran / Warna / Catatan Tambahan:";
+
+            let notePlaceholder = "Contoh: Ukuran 4x4 cm, tinta biru";
+
+            if (product.category === "stempel") {
+              noteLabel = "📝 Keterangan (Warna Tinta & Ukuran):";
+
+              notePlaceholder = "Contoh: Tinta Biru, Ukuran 4x4 cm";
+            } else if (product.category === "plakat") {
+              noteLabel = "📝 Keterangan (Font, Bahan & Dimensi):";
+
+              notePlaceholder = "Contoh: Font Arial, Akrilik 3mm, Tinggi 15 cm";
+            }
+
+            return `
+
+                <div class="cart-item">
+
+                    <div class="cart-item-top">
+
+                        <div>
+
+                            <h4>
+                                ${escapeHTML(product.name)}
+                            </h4>
+
+                            <div
+                                style="
+                                    font-size:10px;
+                                    color:#66788a;
+                                    margin-top:3px;">
+                                ${formatRupiah(product.price)}
+                                / pcs
+                            </div>
+
+                        </div>
+
+                        <div class="cart-item-price">
+                            ${formatRupiah(product.price * item.qty)}
+                        </div>
+
+                    </div>
+
+
+                    <div class="cart-item-controls">
+
+                        <div class="qty-controls">
+
+                            <button
+                                onclick="updateQuantity(${item.id}, -1)">
+                                −
+                            </button>
+
+                            <strong>
+                                ${item.qty}
+                            </strong>
+
+                            <button
+                                onclick="updateQuantity(${item.id}, 1)">
+                                +
+                            </button>
+
+                        </div>
+
+
+                        <button
+                            class="remove-item"
+                            onclick="removeFromCart(${item.id})">
+                            Hapus
+                        </button>
+
+                    </div>
+
+
+                    <div class="cart-note">
+
+                        <label>
+                            ${noteLabel}
+                        </label>
+
+                        <textarea
+                            placeholder="${notePlaceholder}"
+                            oninput="updateNote(${item.id}, this.value)"
+                        >${escapeHTML(item.note)}</textarea>
+
+                    </div>
+
+
+                    <div class="file-upload">
+
+                        <label>
+                            📎 Upload desain (opsional, maksimal 10 MB)
+                        </label>
+
+                        <input
+                            type="file"
+                            accept=".jpg,.jpeg,.png,.pdf,.cdr,.ai,.svg"
+                            onchange="handleFileChange(${item.id}, this)">
+
+                        ${
+                          item.fileName
+                            ? `
+                                    <div style="
+                                        font-size:9px;
+                                        color:#0b4f91;
+                                        margin-top:4px;">
+                                        ✓ ${escapeHTML(item.fileName)}
+                                    </div>
+                                  `
+                            : ""
+                        }
+
+                    </div>
+
+                </div>
+
+            `;
+          })
+          .join("");
+      }
+
+      /* =========================================================
+   OPEN / CLOSE CART
+========================================================= */
+
+      function openCart() {
+        document.getElementById("cartOverlay").classList.add("show");
+
+        renderCart();
+      }
+
+      function closeCart() {
+        document.getElementById("cartOverlay").classList.remove("show");
+      }
+
+      document.getElementById("cartOverlay").addEventListener("click", function (e) {
+        if (e.target === this) {
+          closeCart();
+        }
+      });
+
+      /* =========================================================
+   PAYMENT MODAL
+========================================================= */
+
+      function openPaymentModal() {
+        if (!cart.length) {
+          showToast("Keranjang masih kosong.");
+
+          return;
+        }
+
+        document.getElementById("paymentTotal").textContent = formatRupiah(calculateTotal());
+
+        const now = new Date();
+
+        document.getElementById("transferDate").value = now.toISOString().split("T")[0];
+
+        document.getElementById("transferTime").value = now.toTimeString().slice(0, 5);
+
+        document.getElementById("paymentModal").classList.add("show");
+
+        updatePaymentButton();
+      }
+
+      function closePaymentModal() {
+        document.getElementById("paymentModal").classList.remove("show");
+      }
+
+      /* =========================================================
+   PAYMENT BUTTON VALIDATION
+========================================================= */
+
+      function updatePaymentButton() {
+        const name = document.getElementById("customerName").value.trim();
+
+        const phone = document.getElementById("customerPhone").value.trim();
+
+        const amount = Number(document.getElementById("transferAmount").value);
+
+        const date = document.getElementById("transferDate").value;
+
+        const time = document.getElementById("transferTime").value;
+
+        const agreement = document.getElementById("paymentAgreement").checked;
+
+        const total = calculateTotal();
+
+        const valid = name && phone && amount > 0 && date && time && agreement && amount === total;
+
+        const button = document.getElementById("paymentButton");
+
+        button.disabled = !valid;
+
+        if (amount > 0 && amount !== total) {
+          button.textContent = "⚠️ Nominal Tidak Sesuai";
+        } else {
+          button.textContent = "💬 Konfirmasi via WhatsApp";
+        }
+      }
+
+      ["customerName", "customerPhone", "transferAmount", "transferDate", "transferTime"].forEach((id) => {
+        document.getElementById(id).addEventListener("input", updatePaymentButton);
+      });
+
+      /* =========================================================
+   COPY BCA
+========================================================= */
+
+      async function copyBCA() {
+        try {
+          await navigator.clipboard.writeText("8455121210");
+
+          showToast("Nomor rekening berhasil disalin.");
+        } catch {
+          alert("Nomor rekening: 8455-1212-10");
+        }
+      }
+
+      /* =========================================================
+   GENERATE ORDER ID
+========================================================= */
+
+      function generateOrderId() {
+        const now = new Date();
+
+        const date = now.getFullYear() + String(now.getMonth() + 1).padStart(2, "0") + String(now.getDate()).padStart(2, "0");
+
+        const random = Math.floor(1000 + Math.random() * 9000);
+
+        return `GS-${date}-${random}`;
+      }
+
+      /* =========================================================
+   UPLOAD FILE TO SUPABASE
+========================================================= */
+
+      async function uploadFile(file, orderId, productId) {
+        if (!supabaseClient) {
+          throw new Error("Supabase Publishable Key belum diisi.");
+        }
+
+        const cleanName = file.name.replace(/[^a-zA-Z0-9._-]/g, "_");
+
+        const path = `${orderId}/${productId}-${Date.now()}-${cleanName}`;
+
+        const { error } = await supabaseClient.storage.from(SUPABASE_BUCKET).upload(path, file, {
+          cacheControl: "3600",
+          upsert: false,
+        });
+
+        if (error) {
+          throw error;
+        }
+
+        const { data } = supabaseClient.storage.from(SUPABASE_BUCKET).getPublicUrl(path);
+
+        return {
+          path,
+          url: data.publicUrl,
+        };
+      }
+
+      /* =========================================================
+   PAYMENT CONFIRMATION
+========================================================= */
+
+      async function confirmPayment() {
+        if (!cart.length) {
+          alert("Keranjang masih kosong.");
+
+          return;
+        }
+
+        const name = document.getElementById("customerName").value.trim();
+
+        const phone = document.getElementById("customerPhone").value.trim();
+
+        const amount = Number(document.getElementById("transferAmount").value);
+
+        const date = document.getElementById("transferDate").value;
+
+        const time = document.getElementById("transferTime").value;
+
+        const note = document.getElementById("paymentNote").value.trim();
+
+        const total = calculateTotal();
+
+        if (!name || !phone || !amount || !date || !time) {
+          alert("Mohon lengkapi data pembayaran.");
+
+          return;
+        }
+
+        if (amount !== total) {
+          alert("Nominal transfer harus sama dengan total pesanan.");
+
+          return;
+        }
+
+        if (!document.getElementById("paymentAgreement").checked) {
+          alert("Silakan centang pernyataan konfirmasi.");
+
+          return;
+        }
+
+        const orderId = generateOrderId();
+
+        const button = document.getElementById("paymentButton");
+
+        button.disabled = true;
+
+        button.textContent = "⏳ Menyiapkan pesanan...";
+
+        let uploadedFiles = [];
+
+        try {
+          /* =====================================================
+           UPLOAD DESAIN
+        ===================================================== */
+
+          for (const item of cart) {
+            const file = selectedFiles.get(item.id);
+
+            if (!file) {
+              continue;
+            }
+
+            const uploaded = await uploadFile(file, orderId, item.id);
+
+            uploadedFiles.push({
+              productId: item.id,
+              fileName: file.name,
+              url: uploaded.url,
+            });
+          }
+
+          /* =====================================================
+           BUILD ORDER MESSAGE
+        ===================================================== */
+
+          let message = `KONFIRMASI PEMBAYARAN — MENUNGGU VERIFIKASI ADMIN
+
+Halo Geo Stempel,
+
+Saya ingin melakukan konfirmasi pesanan.
+
+━━━━━━━━━━━━━━━━━━━━
+ID PESANAN
+${orderId}
+
+NAMA
+${name}
+
+NO. WHATSAPP
+${phone}
+
+━━━━━━━━━━━━━━━━━━━━
+DETAIL PESANAN
+`;
+
+          cart.forEach((item, index) => {
+            const product = products.find((p) => p.id === item.id);
+
+            message += `
+${index + 1}. ${product.name}
+Qty: ${item.qty}
+Harga: ${formatRupiah(product.price * item.qty)}
+`;
+
+            if (item.note) {
+              message += `Catatan: ${item.note}
+`;
+            }
+          });
+
+          message += `
+━━━━━━━━━━━━━━━━━━━━
+TOTAL PESANAN
+${formatRupiah(total)}
+
+DATA TRANSFER
+Bank: BCA
+Rekening: 8455-1212-10
+a.n. Nia Rediawati
+
+Nominal Transfer:
+${formatRupiah(amount)}
+
+Tanggal:
+${date}
+
+Jam:
+${time}
+`;
+
+          if (note) {
+            message += `
+CATATAN PEMBAYARAN
+${note}
+`;
+          }
+
+          if (uploadedFiles.length) {
+            message += `
+FILE DESAIN
+`;
+
+            uploadedFiles.forEach((file, index) => {
+              message += `${index + 1}. ${file.fileName}
+${file.url}
+
+`;
+            });
+          }
+
+          message += `
+━━━━━━━━━━━━━━━━━━━━
+
+⚠️ Saya memahami bahwa pembayaran tetap menunggu verifikasi admin.
+
+Mohon admin melakukan pengecekan mutasi rekening BCA sebelum pesanan diproses.
+
+Terima kasih.
+`;
+
+          /* =====================================================
+           OPEN WHATSAPP
+        ===================================================== */
+
+          const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=` + encodeURIComponent(message);
+
+          window.open(whatsappUrl, "_blank");
+
+          /*
+           Keranjang tidak langsung dihapus.
+           Customer bisa tetap melihat data pesanan
+           sampai admin melakukan verifikasi.
+        */
+
+          button.textContent = "✓ WhatsApp Dibuka";
+
+          showToast(`Pesanan ${orderId} siap dikonfirmasi.`);
+        } catch (error) {
+          console.error(error);
+
+          alert("Terjadi masalah saat menyiapkan pesanan.\n\n" + error.message);
+
+          button.disabled = false;
+
+          button.textContent = "💬 Konfirmasi via WhatsApp";
+        }
+      }
+
+      /* =========================================================
+   IMAGE VIEWER / ZOOM
+========================================================= */
+
+      let viewerScale = 1;
+
+      let viewerX = 0;
+      let viewerY = 0;
+
+      let dragging = false;
+
+      let dragStartX = 0;
+      let dragStartY = 0;
+
+      function openViewer(image) {
+        const viewer = document.getElementById("imageViewer");
+
+        const img = document.getElementById("viewerImage");
+
+        img.src = image;
+
+        viewerScale = 1;
+
+        viewerX = 0;
+        viewerY = 0;
+
+        updateViewerTransform();
+
+        viewer.classList.add("show");
+
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeViewer() {
+        document.getElementById("imageViewer").classList.remove("show");
+
+        document.body.style.overflow = "";
+      }
+
+      function updateViewerTransform() {
+        const img = document.getElementById("viewerImage");
+
+        img.style.transform = `translate(${viewerX}px, ${viewerY}px) scale(${viewerScale})`;
+      }
+
+      function zoomIn() {
+        viewerScale = Math.min(viewerScale + 0.25, 4);
+
+        updateViewerTransform();
+      }
+
+      function zoomOut() {
+        viewerScale = Math.max(viewerScale - 0.25, 0.5);
+
+        if (viewerScale <= 1) {
+          viewerX = 0;
+          viewerY = 0;
+        }
+
+        updateViewerTransform();
+      }
+
+      function resetZoom() {
+        viewerScale = 1;
+
+        viewerX = 0;
+        viewerY = 0;
+
+        updateViewerTransform();
+      }
+
+      const viewerStage = document.getElementById("viewerStage");
+
+      viewerStage.addEventListener(
+        "wheel",
+        function (e) {
+          e.preventDefault();
+
+          if (e.deltaY < 0) {
+            zoomIn();
+          } else {
+            zoomOut();
+          }
+        },
+        {
+          passive: false,
+        }
+      );
+
+      viewerStage.addEventListener("dblclick", function () {
+        if (viewerScale === 1) {
+          viewerScale = 2;
+        } else {
+          resetZoom();
+        }
+
+        updateViewerTransform();
+      });
+
+      viewerStage.addEventListener("pointerdown", function (e) {
+        if (viewerScale <= 1) {
+          return;
+        }
+
+        dragging = true;
+
+        dragStartX = e.clientX - viewerX;
+
+        dragStartY = e.clientY - viewerY;
+
+        viewerStage.setPointerCapture(e.pointerId);
+      });
+
+      viewerStage.addEventListener("pointermove", function (e) {
+        if (!dragging) {
+          return;
+        }
+
+        viewerX = e.clientX - dragStartX;
+
+        viewerY = e.clientY - dragStartY;
+
+        updateViewerTransform();
+      });
+
+      viewerStage.addEventListener("pointerup", function () {
+        dragging = false;
+      });
+
+      /* =========================================================
+   KEYBOARD
+========================================================= */
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeViewer();
+          closePaymentModal();
+          closeCart();
+        }
+      });
+
+      /* =========================================================
+   INITIALIZE
+========================================================= */
+
+      renderProducts();
+      renderCart();
+    </script>
+  </body>
+</html>
