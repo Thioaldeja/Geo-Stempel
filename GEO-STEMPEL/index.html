@@ -9,8 +9,6 @@
     <meta name="description" content="Geo Advertising - Distributor gagang stempel, jasa laser akrilik, plakat custom dan berbagai kebutuhan custom." />
 
     <style>
-
-      
       /* =========================================================
            RESET
         ========================================================= */
@@ -1304,6 +1302,13 @@
 
         .navbar {
           min-height: 67px;
+          justify-content: flex-start;
+          gap: 8px;
+        }
+
+        .logo {
+          flex: 1;
+          min-width: 0;
         }
 
         .logo img {
@@ -1427,6 +1432,279 @@
           font-size: 18px;
         }
       }
+
+      /* =========================================================
+         REVIEWS
+      ========================================================= */
+      .reviews {
+        background: #f7faff;
+      }
+      .review-summary {
+        max-width: 760px;
+        margin: 0 auto 25px;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: var(--shadow);
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 20px;
+        align-items: center;
+      }
+      .review-score {
+        text-align: center;
+      }
+      .review-score strong {
+        display: block;
+        font-size: 42px;
+        line-height: 1;
+        color: var(--dark-blue);
+      }
+      .review-stars {
+        color: #f2b01e;
+        letter-spacing: 2px;
+        font-size: 20px;
+        margin: 7px 0;
+      }
+      .review-score small {
+        color: var(--muted);
+        font-size: 11px;
+      }
+      .review-note {
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .review-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+      .review-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin: 0 auto 28px;
+      }
+      .review-pagination button {
+        border: 1px solid var(--border);
+        background: #fff;
+        color: var(--dark-blue);
+        min-width: 38px;
+        height: 38px;
+        padding: 0 12px;
+        border-radius: 10px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .review-pagination button:hover:not(:disabled) {
+        border-color: var(--blue);
+        color: var(--blue);
+      }
+      .review-pagination button.active {
+        background: var(--blue);
+        color: #fff;
+        border-color: var(--blue);
+      }
+      .review-pagination button:disabled {
+        opacity: 0.45;
+        cursor: not-allowed;
+      }
+      .review-page-info {
+        color: var(--muted);
+        font-size: 12px;
+        margin: 0 6px;
+      }
+      .review-warning {
+        display: none;
+        margin: 8px 0 12px;
+        padding: 10px 12px;
+        border-radius: 10px;
+        background: #fff7ed;
+        border: 1px solid #fed7aa;
+        color: #9a3412;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      .review-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 18px;
+        box-shadow: 0 7px 22px rgba(7, 55, 101, 0.06);
+      }
+      .review-card .stars {
+        color: #f2b01e;
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+      .review-card h3 {
+        color: var(--dark-blue);
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .review-card p {
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.6;
+      }
+      .review-date {
+        display: block;
+        color: #8b9aaa;
+        font-size: 10px;
+        margin-top: 10px;
+      }
+      .review-empty {
+        grid-column: 1/-1;
+        text-align: center;
+        color: var(--muted);
+        padding: 25px;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+      }
+      .review-form {
+        max-width: 760px;
+        margin: auto;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 22px;
+        box-shadow: var(--shadow);
+      }
+      .review-form h3 {
+        color: var(--dark-blue);
+        margin-bottom: 5px;
+      }
+      .review-form > p {
+        color: var(--muted);
+        font-size: 12px;
+        margin-bottom: 15px;
+      }
+      .rating-input {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 3px;
+        margin-bottom: 12px;
+      }
+      .rating-input input {
+        display: none;
+      }
+      .rating-input label {
+        font-size: 30px;
+        color: #cbd5df;
+        cursor: pointer;
+        transition: 0.15s;
+      }
+      .rating-input label:hover,
+      .rating-input label:hover ~ label,
+      .rating-input input:checked ~ label {
+        color: #f2b01e;
+      }
+      .review-form textarea {
+        width: 100%;
+        min-height: 100px;
+        resize: vertical;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 10px;
+        outline: none;
+        font-size: 13px;
+        margin-bottom: 12px;
+      }
+      .review-form input[type="text"] {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 10px;
+        outline: none;
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+      .review-form input:focus,
+      .review-form textarea:focus {
+        border-color: var(--blue);
+      }
+      .review-status {
+        min-height: 18px;
+        color: var(--muted);
+        font-size: 11px;
+        margin-top: 8px;
+      }
+      .review-loading {
+        text-align: center;
+        color: var(--muted);
+        padding: 25px;
+      }
+      .review-verified {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        color: #238636;
+        font-size: 9px;
+        font-weight: 700;
+        margin-top: 8px;
+      }
+
+      /* MOBILE NAV */
+      .menu-toggle {
+        display: none;
+        border: 0;
+        background: var(--light-blue);
+        color: var(--blue);
+        width: 43px;
+        height: 43px;
+        border-radius: 12px;
+        font-size: 21px;
+      }
+      .mobile-menu {
+        display: none;
+        background: white;
+        border-top: 1px solid var(--border);
+        padding: 8px 16px 14px;
+      }
+      .mobile-menu.show {
+        display: block;
+      }
+      .mobile-menu a {
+        display: block;
+        padding: 10px 4px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #31506a;
+        border-bottom: 1px solid #eef3f7;
+      }
+      .mobile-menu a:last-child {
+        border-bottom: 0;
+      }
+
+      @media (max-width: 800px) {
+        .menu-toggle {
+          display: grid;
+          place-items: center;
+          flex: 0 0 43px;
+        }
+
+        .cart-button {
+          flex: 0 0 43px;
+        }
+        .review-summary {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        .review-grid {
+          grid-template-columns: 1fr;
+        }
+        .review-pagination button {
+          min-width: 36px;
+          padding: 0 9px;
+        }
+      }
     </style>
   </head>
 
@@ -1449,9 +1727,12 @@
           <a href="#services">Layanan</a>
           <a href="#shop">Produk</a>
           <a href="#portfolio">Portfolio</a>
+          <a href="#reviews">Ulasan</a>
           <a href="#about">Tentang</a>
           <a href="#contact">Kontak</a>
         </nav>
+
+        <button class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Buka menu">☰</button>
 
         <button class="cart-button" onclick="openCart()" aria-label="Keranjang">
           🛒
@@ -1459,6 +1740,15 @@
         </button>
       </div>
     </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="closeMobileMenu()">Home</a>
+      <a href="#services" onclick="closeMobileMenu()">Layanan</a>
+      <a href="#shop" onclick="closeMobileMenu()">Produk</a>
+      <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
+      <a href="#reviews" onclick="closeMobileMenu()">⭐ Ulasan</a>
+      <a href="#about" onclick="closeMobileMenu()">Tentang</a>
+      <a href="#contact" onclick="closeMobileMenu()">Kontak</a>
+    </div>
 
     <!-- =========================================================
      HERO
@@ -1647,6 +1937,55 @@
     </section>
 
     <!-- =========================================================
+     REVIEWS
+    ========================================================= -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-title">
+          <span>Review Pelanggan</span>
+          <h2>⭐ Apa Kata Pelanggan Kami?</h2>
+          <p>Ulasan pelanggan tampil langsung setelah berhasil dikirim.</p>
+        </div>
+
+        <div class="review-summary">
+          <div class="review-score">
+            <strong id="reviewAverage">0.0</strong>
+            <div class="review-stars" id="reviewAverageStars">☆☆☆☆☆</div>
+            <small><span id="reviewCount">0</span> ulasan</small>
+          </div>
+          <div class="review-note">
+            <strong style="display: block; color: var(--dark-blue); margin-bottom: 5px">Pengalaman pelanggan</strong>
+            Terima kasih sudah mempercayakan kebutuhan stempel, akrilik, plakat, piala dan produk custom kepada Geo Advertising.
+          </div>
+        </div>
+
+        <div class="review-grid" id="reviewGrid">
+          <div class="review-loading">Memuat ulasan pelanggan...</div>
+        </div>
+
+        <div class="review-pagination" id="reviewPagination"></div>
+
+        <div class="review-form">
+          <h3>✍️ Tulis Ulasan</h3>
+          <p>Bagikan pengalaman Anda bersama Geo Advertising. Ulasan akan tampil setelah berhasil dikirim.</p>
+
+          <input type="text" id="reviewName" maxlength="60" placeholder="Nama Anda *" />
+
+          <div class="rating-input" aria-label="Pilih rating">
+            <input type="radio" id="star5" name="reviewRating" value="5" /><label for="star5" title="5 bintang">★</label> <input type="radio" id="star4" name="reviewRating" value="4" /><label for="star4" title="4 bintang">★</label>
+            <input type="radio" id="star3" name="reviewRating" value="3" /><label for="star3" title="3 bintang">★</label> <input type="radio" id="star2" name="reviewRating" value="2" /><label for="star2" title="2 bintang">★</label>
+            <input type="radio" id="star1" name="reviewRating" value="1" /><label for="star1" title="1 bintang">★</label>
+          </div>
+
+          <textarea id="reviewText" maxlength="500" placeholder="Ceritakan pengalaman Anda menggunakan produk/jasa Geo Advertising... *"></textarea>
+          <div class="review-warning" id="reviewWarning"></div>
+          <button class="btn btn-blue" id="reviewSubmitButton" onclick="submitReview()" style="width: 100%">⭐ Kirim Ulasan</button>
+          <div class="review-status" id="reviewStatus"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
      ABOUT
 ========================================================= -->
     <section class="section about" id="about">
@@ -1818,6 +2157,7 @@
             <a href="#services">Layanan</a>
             <a href="#shop">Produk</a>
             <a href="#portfolio">Portfolio</a>
+            <a href="#reviews">Ulasan</a>
             <a href="#about">Tentang Kami</a>
           </div>
 
@@ -3116,11 +3456,338 @@ Terima kasih.
       });
 
       /* =========================================================
+         MOBILE MENU
+      ========================================================= */
+      function toggleMobileMenu() {
+        document.getElementById("mobileMenu").classList.toggle("show");
+      }
+
+      function closeMobileMenu() {
+        document.getElementById("mobileMenu").classList.remove("show");
+      }
+
+      /* =========================================================
+         REVIEWS - SUPABASE
+         Table: reviews
+         Kolom: id, name, rating, review, status, created_at
+      ========================================================= */
+      function starsHTML(rating) {
+        const n = Math.max(0, Math.min(5, Number(rating) || 0));
+        return "★".repeat(n) + "☆".repeat(5 - n);
+      }
+
+      function formatReviewDate(value) {
+        if (!value) return "";
+        try {
+          return new Intl.DateTimeFormat("id-ID", {
+            day: "2-digit",
+            month: "long",
+            year: "numeric",
+          }).format(new Date(value));
+        } catch {
+          return "";
+        }
+      }
+
+      let allReviews = [];
+      let currentReviewPage = 1;
+      const REVIEWS_PER_PAGE = 6;
+
+      /*
+       * Filter bahasa kasar/celaan.
+       * Ini adalah lapisan pertama di browser.
+       * RLS Supabase juga harus diberi filter yang sama/lebih ketat
+       * agar pemeriksaan tidak hanya bergantung pada JavaScript.
+       */
+      const BLOCKED_REVIEW_WORDS = [
+        "anjing",
+        "bangsat",
+        "bajingan",
+        "brengsek",
+        "kampret",
+        "goblok",
+        "tolol",
+        "bego",
+        "bodoh",
+        "idiot",
+        "kontol",
+        "memek",
+        "ngentot",
+        "jancuk",
+        "jancok",
+        "tai",
+        "fuck",
+        "fucking",
+        "shit",
+        "bitch",
+        "asshole",
+      ];
+
+      function normalizeReviewText(value) {
+        let text = String(value || "").toLowerCase();
+
+        // Kurangi variasi penulisan/leetspeak sederhana.
+        text = text.replace(/0/g, "o").replace(/1/g, "i").replace(/3/g, "e").replace(/4/g, "a").replace(/5/g, "s").replace(/7/g, "t").replace(/@/g, "a").replace(/\$/g, "s");
+
+        // Hilangkan spasi/simbol agar variasi seperti "a n j i n g"
+        // tetap dapat terdeteksi.
+        return text.replace(/[^a-z0-9]+/g, "");
+      }
+
+      function findBlockedReviewWord(name, review) {
+        const normalized = normalizeReviewText(`${name} ${review}`);
+        return BLOCKED_REVIEW_WORDS.find((word) => normalized.includes(word)) || "";
+      }
+
+      function showReviewWarning(message) {
+        const warning = document.getElementById("reviewWarning");
+        warning.textContent = message;
+        warning.style.display = "block";
+      }
+
+      function clearReviewWarning() {
+        const warning = document.getElementById("reviewWarning");
+        warning.textContent = "";
+        warning.style.display = "none";
+      }
+
+      function renderReviewSummary(rows) {
+        const count = rows.length;
+        const average = count ? rows.reduce((sum, item) => sum + Number(item.rating || 0), 0) / count : 0;
+
+        document.getElementById("reviewAverage").textContent = average.toFixed(1);
+        document.getElementById("reviewAverageStars").textContent = starsHTML(Math.round(average));
+        document.getElementById("reviewCount").textContent = count;
+      }
+
+      function renderReviewPagination(total) {
+        const pagination = document.getElementById("reviewPagination");
+        const totalPages = Math.ceil(total / REVIEWS_PER_PAGE);
+
+        if (totalPages <= 1) {
+          pagination.innerHTML = "";
+          return;
+        }
+
+        let html = `
+          <button type="button" onclick="changeReviewPage(${currentReviewPage - 1})"
+                  ${currentReviewPage === 1 ? "disabled" : ""}>‹</button>
+        `;
+
+        // Tampilkan maksimal beberapa nomor halaman agar tidak terlalu panjang.
+        for (let page = 1; page <= totalPages; page++) {
+          if (totalPages <= 7 || page === 1 || page === totalPages || Math.abs(page - currentReviewPage) <= 1) {
+            html += `
+              <button type="button"
+                      class="${page === currentReviewPage ? "active" : ""}"
+                      onclick="changeReviewPage(${page})">${page}</button>
+            `;
+          } else if ((page === 2 && currentReviewPage > 4) || (page === totalPages - 1 && currentReviewPage < totalPages - 3)) {
+            html += `<span class="review-page-info">…</span>`;
+          }
+        }
+
+        html += `
+          <button type="button" onclick="changeReviewPage(${currentReviewPage + 1})"
+                  ${currentReviewPage === totalPages ? "disabled" : ""}>›</button>
+        `;
+
+        pagination.innerHTML = html;
+      }
+
+      function changeReviewPage(page) {
+        const totalPages = Math.max(1, Math.ceil(allReviews.length / REVIEWS_PER_PAGE));
+        currentReviewPage = Math.max(1, Math.min(page, totalPages));
+        renderReviews(allReviews, false);
+
+        const section = document.getElementById("reviews");
+        if (section && currentReviewPage > 1) {
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+
+      function renderReviews(rows, resetPage = true) {
+        const grid = document.getElementById("reviewGrid");
+        allReviews = Array.isArray(rows) ? rows : [];
+
+        if (resetPage) currentReviewPage = 1;
+
+        renderReviewSummary(allReviews);
+
+        if (!allReviews.length) {
+          grid.innerHTML = `
+            <div class="review-empty">
+              Belum ada ulasan yang ditampilkan. Jadilah pelanggan pertama yang memberikan ulasan. ⭐
+            </div>
+          `;
+          document.getElementById("reviewPagination").innerHTML = "";
+          return;
+        }
+
+        const totalPages = Math.ceil(allReviews.length / REVIEWS_PER_PAGE);
+        if (currentReviewPage > totalPages) currentReviewPage = totalPages;
+
+        const start = (currentReviewPage - 1) * REVIEWS_PER_PAGE;
+        const pageRows = allReviews.slice(start, start + REVIEWS_PER_PAGE);
+
+        grid.innerHTML = pageRows
+          .map(
+            (item) => `
+          <article class="review-card">
+            <div class="stars">${starsHTML(item.rating)}</div>
+            <h3>${escapeHTML(item.name)}</h3>
+            <p>${escapeHTML(item.review)}</p>
+            <span class="review-verified">✓ Pelanggan Geo Advertising</span>
+            <span class="review-date">${formatReviewDate(item.created_at)}</span>
+          </article>
+        `,
+          )
+          .join("");
+
+        renderReviewPagination(allReviews.length);
+      }
+
+      async function loadReviews() {
+        const grid = document.getElementById("reviewGrid");
+
+        if (!supabaseClient) {
+          grid.innerHTML = `<div class="review-empty">Fitur ulasan belum terhubung ke Supabase.</div>`;
+          return;
+        }
+
+        const { data, error } = await supabaseClient.from("reviews").select("id,name,rating,review,created_at").eq("status", "approved").order("created_at", { ascending: false });
+
+        if (error) {
+          console.error("Gagal mengambil review:", error);
+          grid.innerHTML = `<div class="review-empty">Ulasan belum dapat dimuat. Silakan coba lagi beberapa saat.</div>`;
+          return;
+        }
+
+        renderReviews(data || []);
+      }
+
+      async function submitReview() {
+        const name = document.getElementById("reviewName").value.trim();
+        const review = document.getElementById("reviewText").value.trim();
+        const ratingInput = document.querySelector('input[name="reviewRating"]:checked');
+        const rating = ratingInput ? Number(ratingInput.value) : 0;
+        const button = document.getElementById("reviewSubmitButton");
+        const status = document.getElementById("reviewStatus");
+
+        clearReviewWarning();
+        status.textContent = "";
+
+        if (!supabaseClient) {
+          status.textContent = "Fitur ulasan belum terhubung ke Supabase.";
+          return;
+        }
+
+        if (!name) {
+          status.textContent = "Nama wajib diisi.";
+          document.getElementById("reviewName").focus();
+          return;
+        }
+
+        if (name.length > 60) {
+          status.textContent = "Nama maksimal 60 karakter.";
+          return;
+        }
+
+        if (!rating) {
+          status.textContent = "Silakan pilih rating 1–5 bintang.";
+          return;
+        }
+
+        if (!review) {
+          status.textContent = "Ulasan wajib diisi.";
+          document.getElementById("reviewText").focus();
+          return;
+        }
+
+        if (review.length < 10) {
+          status.textContent = "Ulasan minimal 10 karakter.";
+          return;
+        }
+
+        if (review.length > 500) {
+          status.textContent = "Ulasan maksimal 500 karakter.";
+          return;
+        }
+
+        const blockedWord = findBlockedReviewWord(name, review);
+        if (blockedWord) {
+          showReviewWarning("Ulasan mengandung kata atau bahasa yang tidak diperbolehkan. Silakan ubah kalimatnya lalu coba lagi.");
+          document.getElementById("reviewText").focus();
+          return;
+        }
+
+        // Pencegahan spam sederhana di browser.
+        const lastReviewTime = Number(localStorage.getItem("geoLastReviewSubmit") || 0);
+        const cooldownMs = 60 * 1000;
+        const remaining = cooldownMs - (Date.now() - lastReviewTime);
+
+        if (remaining > 0) {
+          const seconds = Math.ceil(remaining / 1000);
+          status.textContent = `Mohon tunggu ${seconds} detik sebelum mengirim ulasan lagi.`;
+          return;
+        }
+
+        button.disabled = true;
+        button.textContent = "⏳ Mengirim...";
+        status.textContent = "";
+
+        const { data, error } = await supabaseClient
+          .from("reviews")
+          .insert([
+            {
+              name,
+              rating,
+              review,
+              status: "approved",
+            },
+          ])
+          .select("id,name,rating,review,created_at")
+          .single();
+
+        if (error) {
+          console.error("Gagal menyimpan review:", error);
+
+          if (error.code === "42501" || /row-level security|policy/i.test(error.message || "")) {
+            status.textContent = "Ulasan ditolak oleh keamanan database. Pastikan policy Supabase sudah diperbarui.";
+          } else {
+            status.textContent = "Ulasan gagal dikirim. Silakan coba lagi.";
+          }
+
+          button.disabled = false;
+          button.textContent = "⭐ Kirim Ulasan";
+          return;
+        }
+
+        localStorage.setItem("geoLastReviewSubmit", String(Date.now()));
+
+        document.getElementById("reviewName").value = "";
+        document.getElementById("reviewText").value = "";
+        document.querySelectorAll('input[name="reviewRating"]').forEach((input) => (input.checked = false));
+
+        status.textContent = "✓ Ulasan berhasil dikirim dan langsung tampil di website. Terima kasih!";
+        button.disabled = false;
+        button.textContent = "⭐ Kirim Ulasan";
+
+        // Tambahkan review baru ke tampilan tanpa menunggu refresh.
+        if (data) {
+          allReviews = [data, ...allReviews];
+          currentReviewPage = 1;
+          renderReviews(allReviews, false);
+        }
+      }
+
+      /* =========================================================
    INITIALIZE
 ========================================================= */
 
       renderProducts();
       renderCart();
+      loadReviews();
     </script>
   </body>
 </html>
