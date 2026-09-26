@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://geo-stempel.vercel.app/sitemap.xml
